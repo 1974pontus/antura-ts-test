@@ -31,11 +31,11 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <div className="card">
-        <h1>Random User!</h1>
-        {isLoading ? (
-          <p>Loading ...</p>
-        ) : (
+      {isLoading ? (
+        <p className="loader">Loading ...</p>
+      ) : (
+        <div className="card">
+          <h1>Random User!</h1>
           <div className="content">
             {users.map((user) => {
               const {
@@ -62,8 +62,8 @@ const App: React.FC = () => {
               );
             })}
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

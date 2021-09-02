@@ -11,10 +11,10 @@ const IconRow: React.FC<Props> = ({ email, cell }) => {
   return (
     <div className="iconrow">
       <Tooltip title={email}>
-        <MailOutlineIcon />
+        <MailOutlineIcon className="hover" />
       </Tooltip>
       <Tooltip title={cell}>
-        <PhoneIcon />
+        <PhoneIcon className="hover" />
       </Tooltip>
     </div>
   );
