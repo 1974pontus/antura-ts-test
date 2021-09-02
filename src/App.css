@@ -1,14 +1,25 @@
 .App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
   margin: 15px;
   text-align: center;
   border: 2px solid pink;
   border-radius: 3px;
-  width: 350px;
-  height: 310px;
+  padding: 10px 30px;
 }
 
 .pic {
   border-radius: 50%;
+}
+
+.iconrow {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 button {
@@ -19,3 +30,9 @@ button {
   background: pink;
   cursor: pointer;
 }
+
+a {
+  cursor: pointer;
+  color: #000;
+}
+
